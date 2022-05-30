@@ -1,0 +1,72 @@
+/*============================================================================
+	#07. Slick slider style
+==============================================================================*/
+.slick-initialized .slick-slide{
+    outline: 0;
+}
+.slick-dots{
+    display: flex !important;
+    justify-content: center;
+    list-style: none;
+    margin: 20px 0;
+    z-index: 2;
+    li>button{
+        border-radius: 40px;
+        border: 1px solid $primary-color;
+        width: 10px;
+        height: 10px;
+        text-align: center;
+        cursor: pointer;
+        padding: 0;
+        margin: 0 auto;
+        color: $dark;
+        font-size: 16px;
+        display: block;
+        line-height: 28px;
+        margin: 0 5px;
+        text-indent: -9999999px;
+        &:hover{
+            border: 1px solid $primary-color;
+            background-color: $primary-color;
+            color: $white;
+        }
+
+    }
+    li{
+        &.slick-active{
+            button{
+                border: 1px solid $primary-color;
+                background-color: $primary-color;
+                color: $white;
+            }
+        }
+    }
+}
+.slick-arrow{
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    position: absolute;
+    cursor: pointer;
+    top:50%;
+    z-index: 1;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: $black;
+    color:$white;
+    &:hover ,&:focus{
+        background-color: $primary-color;
+        color:$white;
+    }
+}
+.slick-arrow{
+    top: 50%;
+}
+.slick-next {
+    right: 2%;
+}
+.slick-prev{
+    left: 2%;
+}

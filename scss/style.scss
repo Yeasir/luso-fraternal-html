@@ -1,0 +1,71 @@
+/*!
+Theme Name: Fraternal
+Theme URI: http://www.luso.com/Fraternal
+Author: Ym-Pervej
+Author URI: https://portfolio.pervej.com/
+Description: Agency web template
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: Fraternal
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/*============================================================================
+	 Template Name: Fraternal
+     Version: 1
+==============================================================================
+    ==========================================
+      CSS INDEX
+    ==========================================
+
+	
+    #00. Normalize or reset css
+    #01. Document Setup
+    #02. Typography
+    #03. Element Base
+    #04. Forms Input Style
+    #05. Wordpress Default style
+    #06. Helper Classes
+    #07. Slick slider style
+    #08. Header and menu style
+    #09. Banner Style
+    #10. About Style
+    #11. agent Style
+    #12. council Style
+    #13. service Style
+    #14. staff Style
+    #15. contact Style
+    #16. map Style
+    #17. policy-form Style
+    #18. product Style
+    #19. forms Style
+    #20. merit Style
+    #21. news Style
+    #22. footer Style
+    #23. responsive Style
+
+==============================================================================*/
+@import 'variabls';
+@import 'custom-font';
+@import 'common';
+@import 'slick';
+@import 'header';
+@import 'banner';
+@import 'about';
+@import 'agent';
+@import 'council';
+@import 'service';
+@import 'staff';
+@import 'contact';
+@import 'map';
+@import 'policy-form';
+@import 'product';
+@import 'forms';
+@import 'merit';
+@import 'news';
+@import 'footer';
+@import 'responsive';

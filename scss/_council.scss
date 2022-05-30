@@ -1,0 +1,34 @@
+.council-item{
+  position: relative;
+  border: 5px solid #254366;
+  padding: 15px;
+  border-radius: 15px;
+  width: 250px;
+  min-height: 250px;
+  margin: 0 auto 30px;
+  .council-item__title{
+    font-family: $basefont-bold;
+    font-weight: $bold;
+    font-size: $font-32+1;
+    margin-bottom: 10px;
+    color: #113063;
+  }
+  .council-item__code{
+    font-size: $font-32+1;
+    font-family: $basefont-bold;
+    font-weight: $bold;
+    display: block;
+  }
+  .council-item__description{
+    font-size: $font-24;
+  }
+
+}
+
+.search-result{
+
+  .council-item{
+    margin: 0 0 30px;
+  }
+
+}

@@ -1,0 +1,374 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Fraternal</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
+
+    <!--All CSS
+    ============================================ -->
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Font-awesome  CSS -->
+    <link rel="stylesheet" href="css/all.css">
+
+    <!-- Slick CSS -->
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/slick.css">
+
+    <!-- fancybox CSS -->
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Modernizer JS -->
+    <script src="js/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body>
+<!--/.header start -->
+<header class="site-header" id="header">
+    <div class="header-top">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-lg-left text-md-left text-sm-center">
+                    <a class="custom-logo-link dark-logo" href="index.html">
+                        <img
+                                alt="logo"
+                                class="lazy"
+                                src="img/_blank.png"
+                                data-src="img/logo/dark-logo.png"/>
+                    </a>
+
+                    <a class="custom-logo-link white-logo" href="index.html">
+                        <img
+                                alt="logo"
+                                class="lazy"
+                                src="img/_blank.png"
+                                data-src="img/logo/white-logo.png"/>
+                    </a>
+
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-lg-right text-md-right text-sm-center right-nfo">
+                    <span class="d-block text-uppercase">Toll Free</span>
+                    <a href="tel:(877) 522-5857" class="h2">(877) 522-5857</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-bottom">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">Fraternal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="find-an-agent.html">Find An Council</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Media</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <div class="form-group has-search">
+                            <span class="fa fa-search form-control-feedback"></span>
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+<!--/.header end -->
+
+<!-- /#main start -->
+<main id="main" class="site-main">
+
+    <!-- /.staff-area start -->
+    <section class="find-agent-area inner-page-wrapper">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-6 col-md-8 col-sm-12 m-auto">
+                    <header class="text-center">
+                        <h2 class="section-title">Find a Council /  Lodge</h2>
+                    </header>
+                    <div class="content mt-5 agent-find-form">
+                        <form>
+                          <div class="row form-group">
+                              <div class="col-lg-7 col-md-6 col-sm-12 text-lg-left text-md-left text-sm-center">
+                                  <input type="text" class="form-control" placeholder="Zip Code" value="">
+                              </div>
+                              <div class="col-lg-5 col-md-6 col-sm-12 text-lg-left text-md-left text-sm-center">
+                                  <label for="select_id" class="d-inline">WITHIN</label>
+                                  <select class="form-control d-inline w-50 ml-2 mr-2" id="select_id">
+                                      <option value="10 miles">10 miles</option>
+                                      <option value="20 miles">20 miles</option>
+                                      <option value="30 miles">30 miles</option>
+                                      <option value="40 miles">40 miles</option>
+                                      <option value="50 miles">50 miles</option>
+                                      <option value="100 miles">100 miles</option>
+                                  </select>
+                              </div>
+                              <div class="col-12 text-lg-left text-md-left text-sm-center">
+                                  <a href="#" class="print-item"> <svg id="printer" xmlns="http://www.w3.org/2000/svg" width="41" height="41" viewBox="0 0 41 41">
+                                      <path id="Path_160" data-name="Path 160" d="M34.994,10.33H33.873V6.006A6.013,6.013,0,0,0,27.867,0H13.133A6.013,6.013,0,0,0,7.127,6.006V10.33H6.006A6.013,6.013,0,0,0,0,16.336v9.609a6.013,6.013,0,0,0,6.006,6.006H7.127V37.4a3.608,3.608,0,0,0,3.6,3.6H30.27a3.608,3.608,0,0,0,3.6-3.6V31.951h1.121A6.013,6.013,0,0,0,41,25.945V16.336A6.013,6.013,0,0,0,34.994,10.33ZM9.529,6.006a3.608,3.608,0,0,1,3.6-3.6H27.867a3.608,3.608,0,0,1,3.6,3.6V10.33H9.529ZM31.471,37.4a1.2,1.2,0,0,1-1.2,1.2H10.73a1.2,1.2,0,0,1-1.2-1.2V25.545H31.471ZM38.6,25.945a3.608,3.608,0,0,1-3.6,3.6H33.873v-4h.721a1.2,1.2,0,0,0,0-2.4H6.406a1.2,1.2,0,0,0,0,2.4h.721v4H6.006a3.608,3.608,0,0,1-3.6-3.6V16.336a3.608,3.608,0,0,1,3.6-3.6H34.994a3.608,3.608,0,0,1,3.6,3.6Z" fill="#7e7e7e"/>
+                                      <path id="Path_161" data-name="Path 161" d="M208.607,353H202.2a1.2,1.2,0,0,0,0,2.4h6.406a1.2,1.2,0,0,0,0-2.4Z" transform="translate(-184.904 -324.732)" fill="#7e7e7e"/>
+                                      <path id="Path_162" data-name="Path 162" d="M208.607,417H202.2a1.2,1.2,0,0,0,0,2.4h6.406a1.2,1.2,0,0,0,0-2.4Z" transform="translate(-184.904 -383.607)" fill="#7e7e7e"/>
+                                      <path id="Path_163" data-name="Path 163" d="M70.045,193H66.2a1.2,1.2,0,0,0,0,2.4h3.844a1.2,1.2,0,0,0,0-2.4Z" transform="translate(-59.795 -177.545)" fill="#7e7e7e"/>
+                                  </svg>
+                                      <span>Print Entire Agent List</span></a>
+                              </div>
+                          </div>
+                          <div class="text-center">
+                             <button type="submit" class="btn mb-2 w-50 submit-btn">Submit</button>
+                         </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-5">
+                <div class="col-7 m-auto text-red text-center">
+                    <h3 class="error-text">"There are no agents locally within your Search area. Here is our list of Agents throughout the United States"</h3>
+                </div>
+
+            </div>
+            <div class="row mb-5">
+                <div class="col-8 m-auto">
+                    <a href="#" class="print-item__btn">
+                        <svg id="printer" xmlns="http://www.w3.org/2000/svg" width="41" height="41" viewBox="0 0 41 41">
+                            <path id="Path_160" data-name="Path 160" d="M34.994,10.33H33.873V6.006A6.013,6.013,0,0,0,27.867,0H13.133A6.013,6.013,0,0,0,7.127,6.006V10.33H6.006A6.013,6.013,0,0,0,0,16.336v9.609a6.013,6.013,0,0,0,6.006,6.006H7.127V37.4a3.608,3.608,0,0,0,3.6,3.6H30.27a3.608,3.608,0,0,0,3.6-3.6V31.951h1.121A6.013,6.013,0,0,0,41,25.945V16.336A6.013,6.013,0,0,0,34.994,10.33ZM9.529,6.006a3.608,3.608,0,0,1,3.6-3.6H27.867a3.608,3.608,0,0,1,3.6,3.6V10.33H9.529ZM31.471,37.4a1.2,1.2,0,0,1-1.2,1.2H10.73a1.2,1.2,0,0,1-1.2-1.2V25.545H31.471ZM38.6,25.945a3.608,3.608,0,0,1-3.6,3.6H33.873v-4h.721a1.2,1.2,0,0,0,0-2.4H6.406a1.2,1.2,0,0,0,0,2.4h.721v4H6.006a3.608,3.608,0,0,1-3.6-3.6V16.336a3.608,3.608,0,0,1,3.6-3.6H34.994a3.608,3.608,0,0,1,3.6,3.6Z" fill="#7e7e7e"/>
+                            <path id="Path_161" data-name="Path 161" d="M208.607,353H202.2a1.2,1.2,0,0,0,0,2.4h6.406a1.2,1.2,0,0,0,0-2.4Z" transform="translate(-184.904 -324.732)" fill="#7e7e7e"/>
+                            <path id="Path_162" data-name="Path 162" d="M208.607,417H202.2a1.2,1.2,0,0,0,0,2.4h6.406a1.2,1.2,0,0,0,0-2.4Z" transform="translate(-184.904 -383.607)" fill="#7e7e7e"/>
+                            <path id="Path_163" data-name="Path 163" d="M70.045,193H66.2a1.2,1.2,0,0,0,0,2.4h3.844a1.2,1.2,0,0,0,0-2.4Z" transform="translate(-59.795 -177.545)" fill="#7e7e7e"/>
+                        </svg>
+                        <span>Print</span></a>
+                </div>
+            </div>
+
+            <div class="row mb-5 pb-3 pt-1 search-result">
+
+                <div class="col text-center">
+                    <div class="council-item">
+                        <h4 class="council-item__title">Oakland California</h4>
+                        <span class="council-item__code">0C-8B</span>
+                        <p class="council-item__description">Lurdes Teixeira</p>
+                        <a href="mailto:test@gmail.com" class="btn council-item__btn">EMAIL</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /.staff-area end -->
+
+
+    <!-- /.service-area start -->
+    <section class="service-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12 text-center">
+                    <a href="#">
+                        <figure class="service-item">
+                            <img
+                                    alt="logo"
+                                    class="lazy"
+                                    src="img/_blank.png"
+                                    data-src="img/service/service-1.png"/>
+                            <figcaption class="service-item--caption bg-primary">
+                                <span class="h3">SECRETARY PORTAL</span>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12  text-center">
+                    <a href="#">
+                        <figure class="service-item">
+                            <img
+                                    alt="logo"
+                                    class="lazy"
+                                    src="img/_blank.png"
+                                    data-src="img/service/service-2.png"/>
+                            <figcaption class="service-item--caption bg-sky-blue">
+                                <span class="h3">CONVENTION
+INFO</span>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12  text-center">
+                    <a href="">
+                        <figure class="service-item">
+                            <img
+                                    alt="logo"
+                                    class="lazy"
+                                    src="img/_blank.png"
+                                    data-src="img/service/service-3.png"/>
+                            <figcaption class="service-item--caption  bg-dark-red">
+                                <span class="h3">EVENTS</span>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12  text-center">
+                    <a href="#">
+                        <figure class="service-item">
+                            <img
+                                    alt="logo"
+                                    class="lazy"
+                                    src="img/_blank.png"
+                                    data-src="img/service/service-4.png"/>
+                            <figcaption class="service-item--caption bg-yellow">
+                                <span class="h3">GET INVOLVED</span>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- /.service-area end -->
+
+</main>
+<!-- /#main end -->
+<!-- /.footer start -->
+<footer class="footer-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 col-md-12 col-sm-12">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 widget">
+                        <h5 class="mb-4 h3 text-uppercase">Home Office</h5>
+
+                        <address>
+                            <strong>
+                                7080 Donlon Way, Suite 200 <br>
+                                Dublin CA 94568
+                                <br>
+                                <br>
+                                Office: (925) 828-4884 <br>
+                                Fax: (925) 828-4554 <br>
+                                Toll Free: (877) 525-5876
+                            </strong>
+                        </address>
+
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 widget">
+                        <h5 class="mb-4 h3 text-uppercase">East Coast Office</h5>
+
+                        <address>
+                            <strong>
+                                128 Union St, Suite 502 <br>
+                                New Bedford MA 02740
+                                <br>
+                                <br>
+                                Fax: (774) 202-1275 <br>
+                                Toll Free: (800) 378-056
+
+                            </strong>
+                        </address>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7 col-md-12 col-sm-12">
+                <div class="row">
+                    <div class="col-lg-7 col-md-6 col-sm-12 widget">
+                        <div class="row no-gutters">
+                            <div class="col-lg-6 col-sm-12 p-0 text-lg-left text-md-left text-sm-center">
+                                <a class="custom-logo-link" href="index.html">
+                                    <img alt="logo"
+                                         class="lazy"
+                                         src="img/_blank.png"
+                                         data-src="img/logo/footer-logo.png"/>
+                                </a>
+                                <ul class="list-inline social-link mt-3">
+                                    <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li class="list-inline-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-6 col-sm-12 p-0">
+                                <ul class="list-unstyled mb-4 footer-menu">
+                                    <li><a href="#">Employment Opportunities </a></li>
+                                    <li><a href="staff.html">Staff </a></li>
+                                    <li><a href="#">Office Location</a></li>
+                                    <li><a href="#">Events Calendar</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-6 col-sm-12 widget">
+                        <h5 class="mb-4 h3 text-uppercase">Stay Updated</h5>
+                        <form>
+                            <div class="form-group">
+                                <input type="text" class="form-control"  placeholder="Name">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Email">
+                            </div>
+                            <div class="text-right">
+                                <input type="submit" class="btn" value="Submit">
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- /.footer end -->
+<!-- Back to top button -->
+<a href="javascript:void(0)" id="scroll" style="display: none;"><i class="fa fa-angle-double-up"></i></a>
+<!-- Back to top button -->
+
+<!-- All JS is here
+============================================ -->
+
+<!-- jQuery JS -->
+<script src="js/jquery-3.4.1.min.js"></script>
+
+<!-- Popper JS -->
+<script src="js/popper.min.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- fancybox JS -->
+<script src="js/jquery.fancybox.js"></script>
+
+<!-- Slick JS -->
+<script src="js/slick.min.js"></script>
+
+<!-- lazyload JS -->
+<script src="js/lazyload.min.js"></script>
+
+<!-- Main JS -->
+<script src="js/main.js"></script>
+
+</body>
+
+</html>

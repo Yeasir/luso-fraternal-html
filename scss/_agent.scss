@@ -1,0 +1,45 @@
+.loader{
+  position: fixed;
+  left: 0px;
+  top: 0;
+  right: 0;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: rgba(255,255,255,0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: $primary-color;
+}
+.error-text{
+  font-family: $basefont;
+  font-weight: 400;
+}
+.agent-item{
+  position: relative;
+  margin-bottom: 50px;
+  .agent-item__agent-img{
+    margin-bottom: 20px;
+  }
+  .agent-item__name{
+    font-family: $basefont;
+    font-weight: $bold;
+  }
+  .agent-item__designation{
+    font-family: $basefont;
+    font-weight: $regular;
+    font-size: $font-30;
+    color: $black;
+    display: block;
+  }
+  .agent-item__card-number{
+    font-family: $basefont;
+    font-weight: $regular;
+    font-size: $font-30;
+    color: $black;
+    display: block;
+  }
+}

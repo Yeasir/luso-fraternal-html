@@ -1,0 +1,36 @@
+.merit-list li a{
+  color: $black;
+  font-size: $font-30;
+  font-family: $basefont-bold;
+}
+
+.merit-list{
+  margin-bottom: 30px;
+
+}
+.merit-content{
+  margin-bottom: 100px;
+  ul{
+    margin-bottom: 30px;
+    margin-left: 20px;
+  }
+  ul.list-unstyled{
+    margin-left: 0;
+  }
+}
+.btn-merit{
+  border-radius: 10px;
+  background: #293c89;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  padding: 15px 20px;
+  font-size: 20px;
+  &:hover{
+    color: $primary-color;
+    color: $white;
+  }
+}
+
+.note{
+  font-weight: 900;
+  font-family: $basefont-bold;
+}

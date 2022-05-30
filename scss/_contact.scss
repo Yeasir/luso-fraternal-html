@@ -1,0 +1,74 @@
+/*============================================================================
+	    #12. contact Style
+==============================================================================*/
+.contact-area{
+  position: relative;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+.contact-form{
+  padding: 50px;
+  border: 1px solid $gray;
+  legend{
+    font-family: $basefont;
+    font-weight: $bold;
+    font-size: $font-50;
+    line-height:1.7;
+    margin-bottom: 30px;
+    color: $primary-color;
+  }
+
+}
+.form-group{
+  margin-bottom: 30px;
+  .row {
+    margin-right: -5px;
+    margin-left: -5px;
+  }
+  .row>.col{
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+.title-tootlip{
+  color: $white;
+  background-color: $dark;
+  display: block;
+  padding: 10px;
+  text-align: center;
+}
+.cell-number{
+  display: block;
+  padding: 10px;
+  text-align: center;
+   position: relative;
+  color:#00536B;
+  &:hover{
+    color: $primary-color;
+  }
+  &:before{
+    content: '';
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width:0;
+    height:0;
+    border-top:10px solid $dark;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+  }
+}
+.contact-item{
+  margin-bottom: 30px;
+}

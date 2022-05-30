@@ -1,0 +1,1416 @@
+/*============================================================================
+	#0. Normalize or reset css
+==============================================================================*/
+*, input, :before, :after {
+    box-sizing: border-box;
+}
+html,
+body {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+address,
+big,
+cite,
+code,
+em,
+font,
+img,
+small,
+strike,
+sub,
+sup,
+li,
+ol,
+ul,
+fieldset,
+form,
+label,
+legend,
+button,
+table,
+caption,
+tr,
+th,
+td {
+    border: none;
+    font-size: inherit;
+    line-height: inherit;
+    margin: 0;
+    padding: 0;
+    text-align: inherit;
+}
+
+blockquote::before,
+blockquote::after {
+    content: "";
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+    display: block;
+}
+
+audio, canvas, progress, video {
+    display: inline-block;
+    vertical-align: baseline;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+/*============================================================================
+	#1. Document Setup
+==============================================================================*/
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+html {
+    line-height: 1.15; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+    box-sizing: content-box; /* 1 */
+    height: 0; /* 1 */
+    overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+    font-family: monospace, monospace; /* 1 */
+    font-size: $font-size-base; /* 2 */
+}
+
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+
+a {
+    background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+    border-bottom: none; /* 1 */
+    text-decoration: underline; /* 2 */
+    text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+    font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+    font-family: monospace, monospace; /* 1 */
+    font-size: $font-size-base; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+    font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sub {
+    bottom: -4px;
+}
+
+sup {
+    top: -8px;
+}
+
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+
+img {
+    border-style: none;
+}
+
+
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit; /* 1 */
+    font-size: 100%; /* 1 */
+    line-height: 1.15; /* 1 */
+    margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input { /* 1 */
+    overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select { /* 1 */
+    text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+    -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+
+fieldset {
+    padding: 5px 12px 10px;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *		`fieldset` elements in all browsers.
+ */
+
+legend {
+    box-sizing: border-box; /* 1 */
+    color: inherit; /* 2 */
+    display: table; /* 1 */
+    max-width: 100%; /* 1 */
+    padding: 0; /* 3 */
+    white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+    vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+
+textarea {
+    overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button; /* 1 */
+    font: inherit; /* 2 */
+}
+
+
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+
+details {
+    display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+    display: list-item;
+}
+
+
+/**
+ * Add the correct display in IE 10+.
+ */
+
+template {
+    display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+
+[hidden] {
+    display: none;
+}
+
+
+/*============================================================================
+	#2. Typography
+==============================================================================*/
+
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+    font-size: $font-size-base;
+    font-style: normal;
+    font-weight: $regular;
+    line-height: 1.5;
+    font-family: $basefont;
+    color: $black;
+}
+
+h1, h2, h3, h4, h5, h6, .h1 , .h2, .h3{
+    clear: both;
+    font-family: $basefont-bold;
+    margin-top: 0;
+}
+
+h1,.h1{
+    font-size: $font-50;
+    line-height: 1.5;
+}
+h2,.h2{
+    font-size: $font-44+1;
+    line-height: 1.5;
+}
+h3, .h3{
+    font-size: $font-30;
+    line-height: 1.4;
+}
+h4{
+    font-size:$font-24;
+    line-height: 31px;
+}
+h5{
+    font-size: $font-20;
+    line-height: 26px;
+}
+h6 {
+    font-size:$font-size-base;
+    line-height: 1.2;
+}
+p {
+    margin-bottom: 16px;
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+
+dfn, cite, em, i {
+    font-style: italic;
+}
+
+blockquote {
+    margin: 0 16px;
+}
+
+address {
+    margin: 0 0 16px;
+}
+
+pre {
+    background: #eee;
+    font-family: "Courier 10 Pitch", Courier, monospace;
+    font-size: 12px;
+    line-height: 1;
+    margin-bottom: 16px;
+    max-width: 100%;
+    overflow: auto;
+    padding: 1.6em;
+}
+
+code, kbd, tt, var {
+    font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+    font-size: 12px;
+}
+
+abbr, acronym {
+    border-bottom: 1px dotted #666;
+    cursor: help;
+}
+
+mark, ins {
+    background: transparent;
+    text-decoration: none;
+    color: $blue;
+}
+
+big {
+    font-size: 125%;
+}
+
+/*============================================================================
+	#3. Element Base
+==============================================================================*/
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+    box-sizing: inherit;
+}
+
+html, body {
+    height: 100%;
+    position: relative;
+}
+
+html {
+    overflow-y: scroll;
+}
+
+body {
+    background-color: $white;
+}
+
+hr {
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 0;
+    height: 1px;
+    margin-bottom: 16px;
+}
+
+ul, ol {
+    margin: 0;
+}
+
+ul {
+    list-style: disc;
+}
+
+ol {
+    list-style: decimal;
+}
+
+li > ul,
+li > ol {
+    margin-bottom: 0;
+    margin-left: 16px;
+}
+
+dt {
+    font-weight: bold;
+}
+
+dd {
+    margin: 0 16px 16px;
+}
+
+img {
+    height: auto;
+    /* Make sure images are scaled correctly. */
+    max-width: 100%;
+    /* Adhere to container width. */
+}
+
+figure {
+    margin: 16px 0;
+    /* Extra wide images within figure tags don't overflow the content area. */
+}
+
+table {
+    margin: 0 0 16px;
+    width: 100%;
+}
+
+
+/*============================================================================
+	#4. Forms Input Style
+==============================================================================*/
+label{
+    font-family: $basefont-bold;
+    font-size: $font-size-base;
+    color: $dark;
+    margin-bottom: 15px;
+}
+button,.btn,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    border: none;
+    box-shadow: none;
+    outline: none;
+    background-color: $dark;
+    border-radius: 5px;
+    color: $white;
+    font-family: $basefont;
+    font-size: $font-size-base;
+    font-weight: $semi-bold;
+    line-height: 1.214;
+    padding: 10px 30px;
+}
+
+button:hover,.btn:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+    color: $white;
+    background-color: $primary-color;
+    box-shadow: none;
+    outline: none;
+}
+
+button:active, button:focus, .btn:focus,.btn:focus,
+input[type="button"]:active,
+input[type="button"]:focus,
+input[type="reset"]:active,
+input[type="reset"]:focus,
+input[type="submit"]:active,
+input[type="submit"]:focus {
+    background-color: $primary-color;
+    box-shadow: none;
+    outline: none;
+}
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+.form-control,
+textarea {
+    border: 1px solid $gray;
+    box-sizing: border-box;
+    border-radius:10px;
+    padding: 8px 10px;
+    color: $dark;
+    font-family: $basefont;
+    font-size:$font-size-base;
+    font-weight: $regular;
+    line-height: 20px;
+    outline: none;
+    box-shadow: none;
+    height: 50px;
+    &::placeholder, &::-moz-placeholder, &::-webkit-input-placeholder{
+        color: rgba(0, 0, 0, 0.3);
+    }
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="range"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="week"]:focus,
+input[type="time"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="color"]:focus,
+.form-control:focus,
+textarea:focus {
+    color: #111;
+    outline: none;
+    box-shadow: none;
+    border: 1px solid $primary-color;
+}
+
+select {
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+textarea {
+    width: 100%;
+}
+
+/*
+*
+*  #Links
+*
+*/
+a {
+    color: $black;
+    transition: 0.5s all;
+}
+
+a:hover, a:focus, a:active {
+    color: $primary-color;
+    text-decoration: none;
+    transition: 0.5s all;
+}
+
+a:focus {
+    outline: 0;
+}
+
+a:hover, a:active {
+    outline: 0;
+}
+
+
+/*============================================================================
+	#05. Wordpress Default style
+==============================================================================*/
+
+/**
+ *  main-navigation
+ */
+
+.main-navigation {
+    clear: both;
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+.main-navigation ul {
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+.main-navigation ul ul {
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+    float: left;
+    position: absolute;
+    top: 100%;
+    left: -999em;
+    z-index: 99999;
+}
+
+.main-navigation ul ul ul {
+    left: -999em;
+    top: 0;
+}
+
+.main-navigation ul ul li:hover > ul,
+.main-navigation ul ul li.focus > ul {
+    left: 100%;
+}
+
+.main-navigation ul ul a {
+    width: 200px;
+}
+
+.main-navigation ul li:hover > ul,
+.main-navigation ul li.focus > ul {
+    left: auto;
+}
+
+.main-navigation li {
+    float: left;
+    position: relative;
+}
+
+.main-navigation a {
+    display: block;
+    text-decoration: none;
+}
+
+/**
+ *  Small menu
+ */
+.menu-toggle,
+.main-navigation.toggled ul {
+    display: block;
+}
+
+.site-main .comment-navigation, .site-main
+.posts-navigation, .site-main
+.post-navigation {
+    margin: 0 0 1.5em;
+    overflow: hidden;
+}
+
+.comment-navigation .nav-previous,
+.posts-navigation .nav-previous,
+.post-navigation .nav-previous {
+    float: left;
+    width: 50%;
+}
+
+.comment-navigation .nav-next,
+.posts-navigation .nav-next,
+.post-navigation .nav-next {
+    float: right;
+    text-align: right;
+    width: 50%;
+}
+
+/**
+ *  Accessibility
+ */
+/* Text meant only for screen readers. */
+.screen-reader-text {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute !important;
+    width: 1px;
+    word-wrap: normal !important; /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+    &:focus {
+        background-color: #f1f1f1;
+        border-radius: 3px;
+        box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+        clip: auto !important;
+        clip-path: none;
+        color: #21759b;
+        display: block;
+        font-size: 14px;
+        font-size: 0.875rem;
+        font-weight: bold;
+        height: auto;
+        left: 5px;
+        line-height: normal;
+        padding: 15px 23px 14px;
+        text-decoration: none;
+        top: 5px;
+        width: auto;
+        z-index: 100000;
+        /* Above WP toolbar. */
+    }
+}
+
+/* Do not show the outline on the skip link target. */
+#content[tabindex="-1"]:focus {
+    outline: 0;
+}
+/**
+ *  Alignments
+ */
+.alignleft {
+    display: inline;
+    float: left;
+    margin-right: 1.5em;
+}
+
+.alignright {
+    display: inline;
+    float: right;
+    margin-left: 1.5em;
+}
+
+.aligncenter {
+    clear: both;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/**
+ *  Clearings
+ */
+.clear:before,
+.clear:after,
+.entry-content:before,
+.entry-content:after,
+.comment-content:before,
+.comment-content:after,
+.site-header:before,
+.site-header:after,
+.site-content:before,
+.site-content:after,
+.site-footer:before,
+.site-footer:after {
+    content: "";
+    display: table;
+    table-layout: fixed;
+}
+
+.clear:after,
+.entry-content:after,
+.comment-content:after,
+.site-header:after,
+.site-content:after,
+.site-footer:after {
+    clear: both;
+}
+/**
+ *  Widgets
+ */
+
+.widget {
+    margin: 0 0 30px;
+    /* Make sure select elements fit in widgets. */
+}
+
+.widget select {
+    max-width: 100%;
+}
+
+/**
+ *  Posts and pages
+ */
+.sticky {
+    display: block;
+}
+
+.post,
+.page {
+    margin: 0 0 1.5em;
+}
+
+.updated:not(.published) {
+    display: none;
+}
+
+
+.page-links {
+    clear: both;
+    margin: 0 0 1.5em;
+}
+
+/**
+ *  Comments
+ */
+.comment-content a {
+    word-wrap: break-word;
+}
+
+.bypostauthor {
+    display: block;
+}
+/**
+ *  Infinite scroll
+ */
+/* Globally hidden elements when Infinite Scroll is supported and in use. */
+.infinite-scroll .posts-navigation,
+.infinite-scroll.neverending .site-footer {
+    /* Theme Footer (when set to scrolling) */
+    display: none;
+}
+
+/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
+.infinity-end.neverending .site-footer {
+    display: block;
+}
+
+/**
+ *  Media
+ */
+.page-content .wp-smiley,
+.entry-content .wp-smiley,
+.comment-content .wp-smiley {
+    border: none;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 0;
+}
+
+/* Make sure embeds and iframes fit their containers. */
+embed,
+iframe,
+object {
+    max-width: 100%;
+}
+
+/* Make sure logo link wraps around logo image. */
+.custom-logo-link {
+    display: inline-block;
+    font-family: $basefont;
+    font-style: normal;
+    font-weight: normal;
+    font-size: $font-30;
+    line-height: 39px;
+    color: $primary-color;
+    max-width: 400px;
+}
+
+/**
+ *  Captions
+ */
+.wp-caption {
+    margin-bottom: 1.5em;
+    max-width: 100%;
+}
+
+.wp-caption img[class*="wp-image-"] {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wp-caption .wp-caption-text {
+    margin: 0.8075em 0;
+}
+
+.wp-caption-text {
+    text-align: center;
+}
+
+/**
+ *  Galleries
+ */
+.gallery {
+    margin-bottom: 1.5em;
+}
+
+.gallery-item {
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    width: 100%;
+}
+
+.gallery-columns-2 .gallery-item {
+    max-width: 50%;
+}
+
+.gallery-columns-3 .gallery-item {
+    max-width: 33.33%;
+}
+
+.gallery-columns-4 .gallery-item {
+    max-width: 25%;
+}
+
+.gallery-columns-5 .gallery-item {
+    max-width: 20%;
+}
+
+.gallery-columns-6 .gallery-item {
+    max-width: 16.66%;
+}
+
+.gallery-columns-7 .gallery-item {
+    max-width: 14.28%;
+}
+
+.gallery-columns-8 .gallery-item {
+    max-width: 12.5%;
+}
+
+.gallery-columns-9 .gallery-item {
+    max-width: 11.11%;
+}
+
+.gallery-caption {
+    display: block;
+}
+
+
+/*============================================================================
+	#06.  Helper Classes
+==============================================================================*/
+.fix {
+    overflow: hidden
+}
+
+.clear {
+    clear: both;
+}
+
+.bg-img {
+    background-position: center center;
+    background-size: cover;
+}
+img:not([src]):not([srcset]) {
+    visibility: hidden;
+}
+.circular-img{
+    border-radius: 50%;
+}
+
+@media only screen and (min-width: 1200px){
+    .container{
+    max-width: 1400px;
+   }
+}
+.inner-page-wrapper{
+    padding: 150px 0 100px;
+}
+section h2.section-title, section .section-title{
+    font-family: $basefont;
+    font-weight: $bold;
+    font-size: $font-50;
+    line-height:1.7;
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+    color: $primary-color;
+    position: relative;
+    &::after{
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: 0 auto;
+        width: 200px;
+        height: 15px;
+        background-color: $primary-color;
+    }
+}
+.section-sub-title{
+    font-family: $basefont;
+    font-weight: $regular;
+    font-size: $font-50;
+    margin-bottom: 20px;
+}
+
+
+
+/*
+*
+* ==========================================
+*  #margin bottom helper
+* ==========================================
+*
+*/
+.mb-10{
+    margin-bottom: 10px;
+}
+.mb-15{
+    margin-bottom: 15px;
+}
+.mb-20{
+    margin-bottom: 20px;
+}
+.mb-25{
+    margin-bottom: 25px;
+}
+.mb-30{
+    margin-bottom: 30px;
+}
+.mb-35{
+    margin-bottom: 35px;
+}
+.mb-40{
+    margin-bottom: 40px;
+}
+.mb-45{
+    margin-bottom: 45px;
+}
+.mb-50{
+    margin-bottom: 50px;
+}
+.mb-55{
+    margin-bottom: 55px;
+}
+.mb-60{
+    margin-bottom: 60px;
+}
+.mb-65{
+    margin-bottom: 65px;
+}
+.mb-70{
+    margin-bottom: 70px;
+}
+.mb-75{
+    margin-bottom: 75px;
+}
+.mb-80{
+    margin-bottom: 80px;
+}
+
+/*
+*
+* ==========================================
+*  #colors helper
+* ==========================================
+*
+*/
+.text-gray{
+    color:#707070;
+}
+.text-white{
+    color: $white;
+}
+.text-green{
+    color: $primary-color;
+}
+.text-black{
+    color: $black;
+}
+.text-primary-color{
+    color: $primary-color;
+}
+.text-red{
+   color: $red;
+}
+.text-navi-blue-color{
+    color: $navi-blue;
+}
+.bg-primary{
+    background-color: $primary-color !important;
+}
+
+.bg-sky-blue{
+    background-color: $sky-blue;
+}
+.bg-yellow{
+    background-color: $yellow;
+}
+.bg-dark-red{
+    background-color: $dark-red;
+}
+.dark-bg{
+    background-color: $dark;
+}
+.black-bg{
+    background-color: $black;
+}
+.whitesmoke-bg{
+    background-color: $whitesmoke;                  ;
+}
+.font-weight-regular{
+    font-weight: $regular;
+}
+.font-weight-bold{
+    font-weight: $bold;
+}
+.font-weight-semibold{
+      font-weight: $semi-bold;
+  }
+
+.font-weight-extra-bold{
+    font-weight: $extra-bold;
+}
+
+/*
+*
+* ==========================================
+* has-search
+* ==========================================
+*
+*/
+
+.has-search .form-control {
+    padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+
+.compensate-for-scrollbar {
+    margin-right: 0!important;
+}
+.social-link{
+    margin-bottom: 20px;
+}
+
+
+
+/*
+*
+* ==========================================
+* scroll
+* ==========================================
+*
+*/
+
+#scroll {
+    position:fixed;
+    right:10px;
+    bottom:10px;
+    cursor:pointer;
+    width:50px;
+    height:50px;
+    line-height: 50px;
+    color: $white;
+    text-align: center;
+    background-color:$primary-color;
+    display:none;
+    -webkit-border-radius:60px;
+    -moz-border-radius:60px;
+    border-radius:60px;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#scroll:hover {
+    background-color:$dark;
+    color: $white;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+
+/*
+*
+* ==========================================
+* animation
+* ==========================================
+*
+*/
+.fade-in {
+    animation: fadeIn ease 5s;
+    -webkit-animation: fadeIn ease 5s;
+    -moz-animation: fadeIn ease 5s;
+    -o-animation: fadeIn ease 5s;
+    -ms-animation: fadeIn ease 5s;
+}
+
+
+@keyframes fadeIn{
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+
+.form-row>.col, .form-row>[class*=col-] {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+/*Checkboxes styles*/
+input[type="checkbox"] { display: none; }
+
+input[type="checkbox"] + label {
+    display: block;
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+input[type="checkbox"] + label:last-child { margin-bottom: 0; }
+
+input[type="checkbox"] + label:before {
+    content: '';
+    display: block;
+    width: 12px;
+    height: 20px;
+    border: 4px solid #293C89;
+    position: absolute;
+    left: 9px;
+    top: -1px;
+    opacity: 0;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transition: all .12s, border-color .08s;
+    transition: all .12s, border-color .08s;
+}
+input[type="checkbox"] + label:after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #293C89;
+    border-radius: 5px;
+    position: absolute;
+    left: 0;
+    top: -3px;
+    opacity: 1;
+    -webkit-transition: all .12s, border-color .08s;
+    transition: all .12s, border-color .08s;
+}
+input[type="checkbox"]:checked + label:before {
+    opacity: 1;
+}
+input[type="checkbox"]:checked + label:after {
+ opacity: 1;
+}

@@ -1,0 +1,35 @@
+#product_tab_content{
+
+   img{
+      width: 100%;
+    }
+
+    p {
+      margin-bottom: 30px;
+    }
+
+  ul{
+    margin-bottom: 30px;
+    margin-left: 20px;
+  }
+
+
+  .promo-video, figure{
+    margin-bottom: 50px;
+  }
+  .promo-video .video-link{
+    width: 80px;
+    height: 80px;
+    top: 50%;
+    svg{
+      width: 25px;
+    }
+  }
+  .promo-video .play-btn{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 1px solid $white;
+  }
+
+}

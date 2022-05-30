@@ -1,0 +1,19 @@
+/*============================================================================
+	#00.service-style
+==============================================================================*/
+.service-area{
+  position: relative;
+  padding-bottom: 100px;
+}
+.service-item{
+
+  img{
+    max-height: 270px;
+    width: 100%;
+  }
+  .service-item--caption{
+   padding: 30px;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+}

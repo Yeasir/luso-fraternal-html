@@ -1,0 +1,221 @@
+/*============================================================================
+	#08. Header and menu style
+==============================================================================*/
+.site-main{
+  padding-top: 200px;
+}
+.header-top{
+  padding: 20px 0;
+}
+.site-header{
+  background-color: $white;
+  padding: 10px 0;
+
+  .form-control{
+    border-radius: 0;
+  }
+}
+.site-header__transparent_enable{
+  .site-header{
+    background-color: transparent;
+  }
+
+  .site-main{
+    padding-top:0;
+  }
+  .navbar-expand-lg .navbar-nav .nav-link{
+    color:$white;
+  }
+
+  .right-nfo{
+    color: $white;
+    font-size: $font-22;
+  }
+  .right-nfo a{
+    color: $white;
+    &:hover{
+      opacity: 0.7;
+    }
+  }
+  .dark-logo{
+    display: none;
+  }
+  .white-logo{
+    display: inline-block;
+  }
+}
+
+.site-header{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  transition: .32s;
+}
+.white-logo{
+  display: none;
+}
+.custom-logo-link{
+  transition: 0.5s all ease-in-out;
+}
+
+.navbar-fixed{
+  position: fixed;
+  background-color: $white !important;
+  box-shadow: 1px 1px 50px rgba(0, 0, 0, 0.05), -1px -1px 50px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  transition: 0.5s all ease-in;
+  z-index: 99;
+  margin-top: 0px;
+  .right-nfo{
+    color: $black;
+  }
+  .right-nfo a{
+    color: $black;
+    &:hover{
+      opacity: 0.7;
+    }
+  }
+
+  .dark-logo{
+    display: inline-block;
+  }
+  .white-logo{
+    display: none;
+  }
+
+  .navbar-fixed .white-logo {
+    display: none;
+  }
+  .white-logo {
+    display: none;
+  }
+
+  .header-top{
+    padding: 0;
+  }
+
+  .custom-logo-link{
+    max-width: 250px;
+    transition: 0.5s all ease-in;
+  }
+
+  h2, .h2 {
+    font-size: 26px;
+    transition: 0.5s all ease-in;
+  }
+  input[type="text"],input[type="search"]{
+    height: 40px;
+    transition: 0.5s all ease-in;
+  }
+}
+.admin-bar .navbar-fixed , .admin-bar.site-header__transparent_enable .navbar-fixed{
+  top: 30px;
+}
+.navbar{
+  padding: 0px;
+}
+.navbar-brand{
+  padding: 0;
+}
+.navbar-expand-lg .navbar-nav{
+  margin: 0;
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+  font-family: $basefont;
+  font-style: normal;
+  font-weight: $semi-bold;
+  font-size: $font-24;
+  line-height: 26px;
+  color: $primary-color;
+  padding:0px 30px;
+  text-transform: uppercase;
+  border-right: 1px solid $white;
+}
+.navbar-expand-lg .navbar-nav .nav-item{
+  &:last-child{
+    .nav-link{
+      border-right:0;
+    }
+  }
+}
+.navbar-fixed{
+  .navbar-expand-lg .navbar-nav .nav-link {
+    color: $primary-color;
+    border-right: 1px solid $primary-color;
+  }
+}
+.navbar-expand-lg .navbar-nav .nav-item.active .nav-link,
+.navbar-expand-lg .navbar-nav .nav-link:focus, .navbar-expand-lg .navbar-nav .nav-link:hover{
+  color: $primary-color;
+}
+.navbar-toggler{
+  background-color: transparent;
+  color: $primary-color;
+  border: 0;
+  margin: 0 0 0 auto;
+  &:focus, &:active{
+    background-color: transparent;
+    color: $primary-color;
+  }
+}
+
+.navbar-collapse.show{
+  background-color: $white;
+}
+
+
+@media screen and (min-width: 992px) {
+  .dropdown> .dropdown-menu {
+    background-color: $whitesmoke;
+    display: block;
+    transition: 0.5s all ease-in;
+    transform: translateY(50px);
+    opacity: 0;
+    visibility: hidden;
+    margin: 0;
+  }
+  .dropdown:hover > .dropdown-menu {
+    transition: 0.5s all ease-in-out;
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+  .dropdown-toggle::after{
+    display: none;
+  }
+  .dropdown > .dropdown-toggle:active {
+    pointer-events: none;
+  }
+
+  .dropdown-item:focus, .dropdown-item:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: $primary-color;
+  }
+
+  .dropdown-item.active, .dropdown-item:active {
+    color: #fff;
+    text-decoration: none;
+    background-color: $whitesmoke;
+  }
+
+}
+
+/*
+*
+* ==========================================
+* breadcome style
+* ==========================================
+*
+*/
+
+.breadcome{
+  position: relative;
+  padding: 50px 0 50px 0;
+}
+.page-header{
+  padding: 50px 0;
+}

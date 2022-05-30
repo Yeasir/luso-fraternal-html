@@ -1,0 +1,184 @@
+/*============================================================================
+	#10. About Style
+==============================================================================*/
+.feature-video {
+  padding: 100px 0;
+  position: relative;
+}
+.about-area{
+  padding: 100px 0 50px;
+  position: relative;
+}
+.benefit{
+  padding: 50px 0 100px;
+  position: relative;
+}
+.about-content{
+  padding: 100px 0;
+  position: relative;
+  img{
+    margin-bottom: 30px;
+  }
+
+  p {
+    margin-bottom: 30px;
+  }
+}
+
+.promo-video {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  img{
+    margin-bottom: 0 !important;
+  }
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    background: rgba(31, 31, 31, 0.4);
+  }
+
+}
+
+.promo-video .video-link {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 40%;
+  width: 143px;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.play-btn {
+  position: relative;
+  text-align: center;
+  line-height: 80px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  place-items: center;
+  border: none;
+  box-shadow: none;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+  border: none;
+}
+
+.about-nfo-box {
+  padding: 30px 20px 30px 0;
+}
+
+
+.sidebar {
+  padding: 120px 35px 20px 0;
+}
+
+
+.sidebar_title {
+  padding: 10px 0 30px;
+  font-family: $basefont;
+  color: $primary-color;
+  font-weight: $semi-bold;
+  border-bottom: 1px solid $black;
+}
+
+.tab-list {
+  li > a {
+    position: relative;
+    padding: 15px 80px 15px 0px;
+    border-bottom: 1px solid $black;
+    font-family: $basefont;
+    font-weight: $semi-bold;
+    color: $black;
+
+    &:after {
+      content: '\f054';
+      font-family: "Font Awesome 5 Free";
+      font-size: 20px;
+      position: absolute;
+      right: 0;
+      top: 20%;
+      font-weight: 900;
+      transition: 0.5s all;
+      color: $black;
+    }
+
+    &.active {
+      color: $primary-color;
+
+      &::after {
+        transform: rotate(90deg);
+        transition: 0.5s all;
+        color: $primary-color;
+      }
+    }
+  }
+}
+
+#about_tab_content {
+  .about-history-img{
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  p {
+    margin-bottom: 30px;
+  }
+
+}
+
+.read-item {
+  position: relative;
+
+  .read-item__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: #254366;
+    color: $white;
+    text-align: center;
+    margin: 40px auto;
+  }
+
+  .read-item__icon i {
+    font-size: 90px;
+    font-weight: 700;
+  }
+
+  .read-item__time {
+    font-size: $font-40;
+    font-family: $basefont-bold;
+  }
+  .title{
+    font-family: $basefont;
+    font-size: $font-34;
+    line-height: 1.5;
+  }
+}
+
+.benefit{
+  padding-bottom: 100px;
+}
+
+.download-btn{
+  padding: 15px 20px;
+}

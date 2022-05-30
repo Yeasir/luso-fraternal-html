@@ -1,0 +1,24 @@
+/*============================================================================
+	#00.staff-area-style
+==============================================================================*/
+.staff-area{
+  position: relative;
+}
+
+.staff{
+  margin-bottom: 50px;
+  img{
+    margin-bottom: 30px;
+  }
+  .staff__office-name{
+    margin-bottom: 30px;
+    font-family: $basefont;
+    font-weight: $semi-bold;
+  }
+
+}
+
+.bio-wrapper{
+  border: 1px solid $gray;
+  padding: 25px;
+}

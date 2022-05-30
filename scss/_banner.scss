@@ -1,0 +1,106 @@
+/*============================================================================
+	#09. Banner Style
+==============================================================================*/
+.hero-wrapper{
+  position: relative;
+  figure{
+    position: relative;
+    margin: 0;
+  }
+}
+.slide{
+  display: block;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+}
+.container-box{
+  position: relative;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: block;
+  height: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.hero-slider_content{
+  display: block;
+  position: absolute;
+  right: 15px;
+  bottom: calc(40% - 160px);
+  z-index: 2;
+}
+.hero-slider{
+  position: relative;
+  &:before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background:$white;
+    clip-path:polygon(28% 80%, 0 100%, 100% 100%)
+  }
+  .hero-slider__title{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: $white;
+    font-family: $basefont-italic;
+    font-style: italic;
+  }
+}
+.gradiant-overlay-yellow .slide{
+  position: relative;
+  &:before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background: rgba(229, 151, 18, 0.6);
+  }
+}
+.gradiant-overlay-blue .slide{
+  position: relative;
+  overflow: hidden;
+  &:before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background: rgba(1, 41 ,83, 0.6);
+  }
+}
+.gradiant-overlay-red .slide{
+  position: relative;
+  &:before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background: rgba(159, 22, 22, 0.6);
+  }
+}

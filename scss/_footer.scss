@@ -1,0 +1,58 @@
+/*============================================================================
+	#16.footer-style
+==============================================================================*/
+
+.footer-area{
+  position: relative;
+  padding: 60px 0 30px;
+  background-color: $dark;
+  color:$white;
+  p{
+    color: $white;
+  }
+  a{
+    color: $white;
+    &:hover{
+      color: rgba(255, 255, 255, 0.55);
+    }
+  }
+  address{
+    font-family: $basefont;
+    font-weight: $semi-bold;
+  }
+  .footer-menu li>a{
+    font-family: $basefont;
+    font-weight: $semi-bold;
+  }
+  .social-link li{
+    margin-right: 15px;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+  .social-link li>a{
+   font-size: 20px;
+  }
+
+  input[type="submit"] {
+    border: 1px solid $white;
+  }
+
+  .form-control{
+    border-radius: 0;
+  }
+
+}
+
+.phone .form-control{
+  text-align: left !important;
+  border: 1px solid transparent;
+  background-color: transparent;
+  color: $white;
+  &::-moz-placeholder, &::-webkit-input-placeholder, &::placeholder{
+    color: #fff;
+  }
+  &:hover, &:focus{
+    color: #fff;
+  }
+}

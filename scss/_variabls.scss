@@ -1,0 +1,74 @@
+$primary-color: #113063;
+$black: #000000;
+$white: #ffffff;
+$deep-dark: #0A0425;
+$gray: #707070;
+$whitesmoke: #FBFAF8;
+$dark: #001A39;
+$navi-blue: #254366;
+$sky-blue: #4a88cf;
+$blue: #0077FF;
+$yellow: #fcc917;
+$dark-red: #ad2624;
+$red: #fc1c17;
+
+
+//$basefont:'Roboto', sans-serif;
+$basefont: 'Segoe UI Regular';
+$basefont-italic:  'Segoe UI Italic';
+$basefont-bold: 'Segoe UI Bold';
+$basefont-bold-italic: 'Segoe UI Bold Italic';
+
+
+$assetPath: "img";
+$scaler: 0.75;
+
+$font-12: 12px;
+$font-14: 14px;
+$font-size-base: 16px;
+$font-18: ceil($font-size-base*$scaler*1.125);
+$font-20: ceil($font-size-base*$scaler*1.25);
+$font-22: ceil($font-size-base*$scaler*1.375);
+$font-24: ceil($font-size-base*$scaler*1.5);
+$font-26: ceil($font-size-base*$scaler*1.625);
+$font-28: ceil($font-size-base*$scaler*1.75);
+$font-30: ceil($font-size-base*$scaler*1.875);
+$font-32: ceil($font-size-base*$scaler*2);
+$font-34: ceil($font-size-base*$scaler*2.125);
+$font-36: ceil($font-size-base*$scaler*2.25);
+$font-38: ceil($font-size-base*$scaler*2.375);
+$font-40: ceil($font-size-base*$scaler*2.5);
+$font-42: ceil($font-size-base*$scaler*2.625);
+$font-44: ceil($font-size-base*$scaler*2.75);
+$font-46: ceil($font-size-base*$scaler*2.875);
+$font-48: ceil($font-size-base*$scaler*3);
+$font-50: ceil($font-size-base*$scaler*3.125);
+$font-52: ceil($font-size-base*$scaler*3.25);
+$font-54: ceil($font-size-base*$scaler*3.375);
+$font-56: ceil($font-size-base*$scaler*3.5);
+$font-58: ceil($font-size-base*$scaler*3.75);
+$font-60: ceil($font-size-base*$scaler*3.875);
+$font-65: ceil($font-size-base*$scaler*4.063);
+$font-70: ceil($font-size-base*$scaler*4.375);
+$font-75: ceil($font-size-base*$scaler*4.685);
+
+
+$thin: 100;
+$extra-light: 200;
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semi-bold: 600;
+$bold: 700;
+$extra-bold: 800;
+$black-weight: 900;
+
+
+$xx-layout: 'only screen and (min-width: 1367px) and (max-width: 1920px)';
+$xl-layout: 'only screen and (min-width: 1200px) and (max-width: 1366px)';
+$lg-layout: 'only screen and (min-width: 992px) and (max-width: 1199px)';
+$md-layout: 'only screen and (min-width: 768px) and (max-width: 991px)';
+$xs-layout: 'only screen and (max-width: 767px)';
+$sm-layout: 'only screen and (min-width: 568px) and (max-width: 767px)';
+$xss-layout: 'only screen and (max-width: 480px)';
+$min-v-layout: 'only screen and (min-width: 768px)';
